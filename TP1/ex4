@@ -1,0 +1,13 @@
+const tableau1 = [1, 2, 3];
+const tableau2 = [4, 5, 6];
+
+const fusion = [...tableau1, ...tableau2];
+
+console.log(fusion);
+//2eme question
+
+const a=[1,2,3,4];
+const b=[...a];
+b.push(5);
+console.log(a);
+console.log(b);

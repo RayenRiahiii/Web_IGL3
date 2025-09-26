@@ -1,0 +1,28 @@
+class Etudiant{
+    constructor(nom,note){
+        this.nom=nom;
+        this.note=note;
+    }
+    getMention(){
+        if (this.note>=16){
+            console.log("Très bien");
+        }
+        else if (this.note>=14){
+            console.log("Bien");
+        }
+        else if (this.note>=10){
+            console.log("Passable");
+        }
+        else{
+            console.log("echec");
+        }
+    }
+    
+}
+const e1=new Etudiant("hammadi",19);
+const e2=new Etudiant("sarra",9);
+const e3=new Etudiant("Ahmed",11);
+
+e1.getMention();
+e2.getMention();
+e3.getMention();

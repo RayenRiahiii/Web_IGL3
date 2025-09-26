@@ -1,0 +1,11 @@
+const Livre = {
+    titre: "les mesirables",
+    auteur: "Victor Hugo",
+    annee: 1917,
+
+    getInfo: function () {
+        return `${this.titre}, écrit par ${this.auteur} en ${this.annee}.`;
+    }
+};
+
+console.log(Livre.getInfo());

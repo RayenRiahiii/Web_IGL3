@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List Website</title>
+</head>
+<body>
+    <div class="container">
+        <h2>To-Do List <img src= ></h2>
+        <h3>Organisez vos tâches quotidiennes</h3>
+     <div class="stats">
+            <div class="total">
+                <p>Total:</p>
+                <p id="total">0</p>
+            </div>
+            <div class="completed">
+                <p>Terminées:</p>
+                <p id="completed">0</p>
+            </div>
+
+            <div class="remaining">
+                <p>En cours:</p>
+                <p id="remaining">0</p>
+            </div>
+      </div>
+        <div class="inputsection">
+            <input type="text" id="taskinput" placeholder="Ajouter une nouvelle tâche...">
+            <button id="add" onclick="ajouterTache()">Add</button>
+        </div>
+        <ul id="liste">
+        </ul>
+        <button id="clear" onclick="clearList()">Supprimer Tout</button>
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+    <p>&copy; 2025 To-Do list website. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

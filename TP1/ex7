@@ -1,0 +1,19 @@
+const notes = [12, 5, 17, 9, 20];
+
+const moyenne = notes.reduce((a, b) => a + b, 0) / notes.length;
+console.log(moyenne);
+
+const triDecroissant = [...notes].sort((a,b)=>b-a);
+console.log(triDecroissant);
+//methode filter1
+const notesFiltrees1 = notes.filter(n => n >= 10);
+console.log(notesFiltrees1);
+
+//methode filtre2
+const notesFiltrees2 = [];
+for (let i = 0; i < notes.length; i++) {
+    if (notes[i] >= 10) {
+        notesFiltrees2.push(notes[i]);
+    }
+}
+console.log("Notes ≥ 10 :", notesFiltrees2);
