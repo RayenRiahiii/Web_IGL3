@@ -113,7 +113,7 @@ function loadTaches(){
     if(!raw)return;
     try{
         const parsed=JSON.parse(raw);
-        if(Array.isArray(parsed)){
+        if(Array.aisArray(parsed)){
             tabTaches=parsed;
             liste.innerHTML="";
             tabTaches.forEach(t=>{
