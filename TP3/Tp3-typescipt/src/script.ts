@@ -149,6 +149,10 @@ class Repository<T>{
     getAll():T[]{
         return this.repo;
     }
-}
-
+} 
+//4. Crée une interface générique ApiResponse<T> avec les propriétés data: T et error?: string.
+interface ApiResponse<T> { 
+    data: T,
+    error?: string
+};
 
