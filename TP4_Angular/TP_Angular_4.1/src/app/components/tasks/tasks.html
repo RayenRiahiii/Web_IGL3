@@ -1,0 +1,29 @@
+<h2>Liste des tâches</h2>
+
+
+<p *ngIf="taches.length === 0" class="empty">
+  Aucune tâche à afficher
+</p>
+
+
+<ul *ngIf="taches.length > 0">
+  <li *ngFor="let tache of taches"
+      [ngClass]="{ `completed`: tache.statut }"
+      [ngStyle]="{
+        color: tache.priorite === `haute` ? `red` :
+               tache.priorite === `moyenne` ? `orange` :
+               `green`
+      }"
+  >
+    {{ tache.description }}
+
+    <button (click)="basculerStatut(tache)">
+      {{ tache.statut ? 'Marquer non complétée' : 'Marquer complétée' }}
+    </button>
+  </li>
+</ul>
+
+
+<button (click)="supprimerTaches()" class="clear-btn">
+  Supprimer toutes les tâches
+</button>

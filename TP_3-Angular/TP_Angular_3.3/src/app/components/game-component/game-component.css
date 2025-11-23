@@ -1,0 +1,73 @@
+/* Container principal */
+.game-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Timer */
+.timer {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.timer.warning {
+  background-color: #ffccbc;
+  color: #d84315;
+}
+
+/* Progress */
+.progress {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Question */
+app-question {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Résultats */
+.results {
+  text-align: center;
+}
+
+.results h2 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.results p {
+  margin: 5px 0;
+}
+
+/* Bouton Recommencer */
+button {
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}

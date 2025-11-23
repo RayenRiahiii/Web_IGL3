@@ -1,0 +1,32 @@
+<div class="game-container">
+    <div class="header">
+      <app-score 
+        [score]="score" 
+        [bonnesReponses]="bonnesReponses"
+        [mauvaisesReponses]="mauvaisesReponses">
+      </app-score>
+      
+      <div class="timer" [class.warning]="timeLeft <= 5">
+        ⏱️ {{ timeLeft }}s
+      </div>
+    </div>
+
+    <div class="progress">
+      Question {{ currentQuestionIndex + 1 }} / {{ questions.length }}
+    </div>
+  
+    <div *ngIf="!quizTermine">
+      <app-question
+        [question]="currentQuestion"
+        (optionSelected)="onSelectOption($event)">
+      </app-question>
+    </div>
+  
+    <div *ngIf="quizTermine" class="results">
+      <h2>Quiz Terminé !</h2>
+      <p>Score final : {{ score }} points</p>
+      <p>Bonnes réponses : {{ bonnesReponses }}</p>
+      <p>Mauvaises réponses : {{ mauvaisesReponses }}</p>
+      <button (click)="restartQuiz()">Recommencer</button>
+    </div>
+  </div>

@@ -1,0 +1,23 @@
+<h2>{{etudiant.name}} Details</h2>
+<div><strong>id: </strong>{{etudiant.id}}</div>
+<label>name:
+    <input [(ngModel)]="etudiant.name" placeholder="name"/>
+    </label>
+<div><strong>average: </strong>{{etudiant.average | percent}}</div>
+<table border="1">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>lastname</th>
+      <th>average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let etudiant of etudiants">
+      <td>{{etudiant.id}}</td>
+      <td>{{etudiant.name}}</td>
+      <td>{{etudiant.lastname}}</td>
+      <td>{{etudiant.average}}</td>
+    </tr>
+  </tbody>

@@ -1,0 +1,37 @@
+.score-container {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .score-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .score-item.main {
+    background: #eef2ff;
+    color: #4c51bf;
+  }
+  
+  .score-item.correct {
+    background: #d1fae5;
+    color: #059669;
+  }
+  
+  .score-item.incorrect {
+    background: #fee2e2;
+    color: #dc2626;
+  }
+  
+  .score-label {
+    font-size: 0.85rem;
+  }
+  
+  .score-value {
+    font-weight: 700;
+  }

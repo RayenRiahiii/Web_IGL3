@@ -1,0 +1,18 @@
+<app-produit
+[nomProduit]="'Ordinateur Portable'"
+[description]="'Un ordinateur portable puissant et léger.'"
+(ajouterAuPanier)="gererAjoutAuPanier($event)">
+</app-produit>
+<app-produit
+[nomProduit]="'Smartphone'"
+[description]="'Un Smartphone compacte avec une excellente qualité d image.'"
+(ajouterAuPanier)="gererAjoutAuPanier($event)">
+</app-produit>
+<app-produit
+[nomProduit]="'Télévision'"
+[description]="'Une télévision 4K avec des couleurs vives et un son immersif.'"
+(ajouterAuPanier)="gererAjoutAuPanier($event)">
+</app-produit>
+<app-panier [items]="panierItems"></app-panier>
+
+<router-outlet />

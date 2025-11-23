@@ -1,0 +1,69 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Police générale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* Conteneur principal */
+.app-container {
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Navbar simple */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4c51bf;
+  text-decoration: none;
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background-color: #e0e4ff;
+  color: #4c51bf;
+}
+
+.nav-links a.active {
+  background-color: #4c51bf;
+  color: white;
+}
+
+/* Main content */
+main {
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}

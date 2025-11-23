@@ -1,0 +1,47 @@
+/* Container de la question */
+.question-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Titre de la question */
+.question-container h2 {
+  color: #00796b;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Container des options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Boutons d'options */
+.options button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+  background-color: #e0f7fa;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover simple */
+.options button:hover:enabled {
+  background-color: #b2dfdb;
+}
+
+/* Boutons désactivés */
+.options button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

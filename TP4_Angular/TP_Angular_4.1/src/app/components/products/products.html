@@ -1,0 +1,27 @@
+<h2>Liste des produits</h2>
+
+<br>
+<ul>
+  <li *ngFor="let product of products; let i = index">
+
+    <strong>{{ product.name }}</strong> —
+    <span 
+      [ngStyle]="{
+        'color': product.stock > 50 ? 'green' :
+                 product.stock >= 20 ? 'orange' :
+                 'red'
+      }"
+    >
+      Stock : {{ product.stock }}
+    </span>
+
+    <br>
+
+    <!-- Input pour modifier le stock dynamiquement -->
+    <input 
+      type="number" 
+      [(ngModel)]="product.stock"
+      class="input"
+    >
+  </li>
+</ul>

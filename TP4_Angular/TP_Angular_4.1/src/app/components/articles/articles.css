@@ -1,0 +1,77 @@
+h2 {
+    font-family: Arial, sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .input, .textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .textarea {
+    min-height: 80px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .btn:disabled {
+    background-color: #7ea7ed;
+    cursor: not-allowed;
+  }
+  
+  .btn:not(:disabled):hover {
+    background-color: #0369a1;
+  }
+  li {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  }
+  
+  .important {
+    background-color: #fee2e2;    /* rouge clair */
+    border-left: 5px solid #dc2626;
+  }
+  
+  .moyen {
+    background-color: #fef9c3;    /* jaune clair */
+    border-left: 5px solid #ca8a04;
+  }
+  
+  .faible {
+    background-color: #ecfdf5;    /* vert clair */
+    border-left: 5px solid #16a34a;
+  }
+  
+  .label {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+  }
+  

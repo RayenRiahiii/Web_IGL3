@@ -1,0 +1,18 @@
+label {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  input {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+  }
+  
+  p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #444;
+  }
+  
